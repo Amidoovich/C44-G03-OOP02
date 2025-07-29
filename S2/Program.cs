@@ -44,7 +44,7 @@
             //Console.WriteLine(P02);
 
             //P02.X = 300;
-            
+
             //Console.WriteLine(P01);
             //Console.WriteLine(P02);
 
@@ -52,7 +52,16 @@
             #endregion
             #endregion
 
+            Employee employee = new Employee(salary:5000,name: "Mostafa Hany Mohamed", id: 10);
+
+            //employee.EmpId = 20; // Set Id Direct by Attribute
+            //employee.Salary = 20000;
+            //Console.WriteLine(employee.EmpId); // Get Id Direct by Attribute
+
+            //employee.SetName("Mostafa Hany Mohamed");
+            Console.WriteLine(employee.GetName());
 
         }
+
     }
 }
