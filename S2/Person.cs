@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace S2
 {
-    internal class Person
+    internal struct Person
     {
         #region Attributes
 

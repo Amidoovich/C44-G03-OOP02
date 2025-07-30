@@ -14,7 +14,7 @@
             
 
             for (int i = 0;i<Persons.Length;i++)
-                Console.WriteLine($"Person Number {i+1}\nName : {Persons[i].Name}\nAge : {Persons[i].Age}\n");
+                Console.WriteLine($"Person Number {i+1}\nName : {Persons[i].Name}\nAge : {Persons[i].Age}");
 
 
             #endregion
