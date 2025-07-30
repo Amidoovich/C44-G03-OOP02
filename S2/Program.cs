@@ -4,96 +4,19 @@
     {
         static void Main(string[] args)
         {
-            #region Struct
-            #region Example 01
-            //Point P01; // declare variable from point data type
-            //// CLR will Allocate 8 Unintialized Bytes in Stack
-            ////== int X;
+            #region Q1-Define a struct "Person" with properties "Name" and "Age". Create an array of three "Person" objects and populate it with data. Then, write a C# program to display the details of all the persons in the array.
 
-            ////P01 = new Point();
-            ////// new => just for constructor selection that will used to initialize P01 Attributes
+            Person[] Persons = new Person[3];
 
-            ////Console.WriteLine(P01.X);
-            ////Console.WriteLine(P01.Y);
+            Persons[0] = new Person("Ahmed",21);
+            Persons[1] = new Person("Mohamed",50);
+            Persons[2] = new Person("Samy",79);
+            
 
-            //P01 = new Point(10);
-            //// new => just for constructor selection that will used to initialize P01 Attributes
-
-            //Console.WriteLine(P01.X);
-            //Console.WriteLine(P01.Y);
-
-            //Console.WriteLine(P01);
-            //Console.WriteLine(P01.ToString());
-
-            //int X = 5;
-            //Console.WriteLine(X);  
-            #endregion
-            #region Example 02
-            //Point P01 = new Point(10,20);
-
-            //Console.WriteLine(P01);
+            for (int i = 0;i<Persons.Length;i++)
+                Console.WriteLine($"Person Number {i+1}\nName : {Persons[i].Name}\nAge : {Persons[i].Age}\n");
 
 
-
-            //Point P02 = new Point(100,200);
-            //Console.WriteLine(P02);
-
-            //P02 = P01;
-
-            //Console.WriteLine(P01);
-            //Console.WriteLine(P02);
-
-            //P02.X = 300;
-
-            //Console.WriteLine(P01);
-            //Console.WriteLine(P02);
-
-
-            #endregion
-            #endregion
-
-            #region Encapsulation
-            //Employee employee = new Employee(salary:7000,name: "Mostafa Hany Mohamed", id: 10);
-
-            //employee.EmpId = 20; // Set Id Direct by Attribute
-            //employee.Salary = 20000;
-            //Console.WriteLine(employee.EmpId); // Get Id Direct by Attribute
-
-            //employee.SetName("Mostafa Hany Mohamed");
-            //Console.WriteLine(employee.GetName());
-
-            //emp.salary = 2000;
-
-            //employee.Salary = 3000; // set salary by property
-            //employee.Age = 50;
-
-            //Console.WriteLine(employee.Salary); // get salary by property
-
-            #endregion
-
-            #region Indexer
-            //PhoneNoteBook phoneNoteBook = new PhoneNoteBook(3);
-
-            //phoneNoteBook.AddPerson(0,"Ahmed",123);
-            //phoneNoteBook.AddPerson(1,"May",456);
-            //phoneNoteBook.AddPerson(2,"Mona",789);
-
-
-            ////phoneNoteBook.SetNumber("May", 999);
-            ////Console.WriteLine(phoneNoteBook.GetNumber("May"));
-
-            ////phoneNoteBook["May"] = 999;
-
-            //for (int i = 0; i< phoneNoteBook.Size; i++)
-            //{
-            //    Console.WriteLine(phoneNoteBook[i]);
-            //}
-
-            //string Name = "Mostafa";
-
-           // Name[0] = 'A';
-
-            //Console.WriteLine(Name[0]);
             #endregion
         }
 
