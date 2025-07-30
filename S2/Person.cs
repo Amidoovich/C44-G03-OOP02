@@ -37,5 +37,21 @@ namespace S2
 
 
         #endregion
+
+        #region Methods
+
+        public static string OldestPerson(Person P01, Person P02, Person P03)
+        {
+            if (P01.Age > P02.Age && P01.Age > P03.Age)
+                return $"Name : {P01.Name}\nAge : {P01.Age}";
+            else if (P02.Age > P01.Age && P02.Age > P03.Age)
+                return $"Name : {P02.Name}\nAge : {P02.Age}";
+
+            return $"Name : {P03.Name}\nAge : {P03.Age}";
+            
+        }
+
+
+        #endregion
     }
 }

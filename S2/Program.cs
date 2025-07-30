@@ -61,6 +61,44 @@ namespace S2
             //Console.WriteLine($"the distance is {Point.DistanceBetweenTwoPoints(P01,P02)}");
             #endregion
 
+            #region Q3-Create a struct called "Person" with properties "Name" and "Age". Write a C# program that takes details of 3 persons as input from the user and displays the name and age of the oldest person.
+            string? Name;
+            int Age;
+            bool IsParse;
+            Person P01 = new Person();
+            Person P02 = new Person();
+            Person P03 = new Person();
+            do
+            {
+                Console.Write($"Please Enter the Name of the first person : ");
+                P01.Name = Console.ReadLine();
+                Console.Write($"Please Enter the Age of the first person : ");
+                IsParse = int.TryParse( Console.ReadLine(), out Age );
+            } while (!IsParse);
+            P01.Age = Age;
+            Console.WriteLine("\n");
+            do
+            {
+                Console.Write($"Please Enter the Name of the second person : ");
+                P02.Name = Console.ReadLine();
+                Console.Write($"Please Enter the Age of the second person : ");
+                IsParse = int.TryParse( Console.ReadLine(), out Age );
+            } while (!IsParse);
+            P02.Age = Age;
+            Console.WriteLine("\n");
+            do
+            {
+                Console.Write($"Please Enter the Name of the third person : ");
+                P03.Name = Console.ReadLine();
+                Console.Write($"Please Enter the Age of the third person : ");
+                IsParse = int.TryParse( Console.ReadLine(), out Age );
+            } while (!IsParse);
+            P03.Age = Age;
+            Console.WriteLine("\n");
+
+            Console.WriteLine(Person.OldestPerson(P01, P02, P03));
+            #endregion
+
         }
 
     }
