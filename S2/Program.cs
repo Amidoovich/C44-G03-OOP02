@@ -52,7 +52,8 @@
             #endregion
             #endregion
 
-            Employee employee = new Employee(salary:7000,name: "Mostafa Hany Mohamed", id: 10);
+            #region Encapsulation
+            //Employee employee = new Employee(salary:7000,name: "Mostafa Hany Mohamed", id: 10);
 
             //employee.EmpId = 20; // Set Id Direct by Attribute
             //employee.Salary = 20000;
@@ -64,10 +65,36 @@
             //emp.salary = 2000;
 
             //employee.Salary = 3000; // set salary by property
-            employee.Age = 50;
+            //employee.Age = 50;
 
-            Console.WriteLine(employee.Salary); // get salary by property
+            //Console.WriteLine(employee.Salary); // get salary by property
 
+            #endregion
+
+            #region Indexer
+            //PhoneNoteBook phoneNoteBook = new PhoneNoteBook(3);
+
+            //phoneNoteBook.AddPerson(0,"Ahmed",123);
+            //phoneNoteBook.AddPerson(1,"May",456);
+            //phoneNoteBook.AddPerson(2,"Mona",789);
+
+
+            ////phoneNoteBook.SetNumber("May", 999);
+            ////Console.WriteLine(phoneNoteBook.GetNumber("May"));
+
+            ////phoneNoteBook["May"] = 999;
+
+            //for (int i = 0; i< phoneNoteBook.Size; i++)
+            //{
+            //    Console.WriteLine(phoneNoteBook[i]);
+            //}
+
+            //string Name = "Mostafa";
+
+           // Name[0] = 'A';
+
+            //Console.WriteLine(Name[0]);
+            #endregion
         }
 
     }
