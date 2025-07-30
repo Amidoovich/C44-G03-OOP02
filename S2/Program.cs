@@ -52,14 +52,21 @@
             #endregion
             #endregion
 
-            Employee employee = new Employee(salary:5000,name: "Mostafa Hany Mohamed", id: 10);
+            Employee employee = new Employee(salary:7000,name: "Mostafa Hany Mohamed", id: 10);
 
             //employee.EmpId = 20; // Set Id Direct by Attribute
             //employee.Salary = 20000;
             //Console.WriteLine(employee.EmpId); // Get Id Direct by Attribute
 
             //employee.SetName("Mostafa Hany Mohamed");
-            Console.WriteLine(employee.GetName());
+            //Console.WriteLine(employee.GetName());
+
+            //emp.salary = 2000;
+
+            //employee.Salary = 3000; // set salary by property
+            employee.Age = 50;
+
+            Console.WriteLine(employee.Salary); // get salary by property
 
         }
 

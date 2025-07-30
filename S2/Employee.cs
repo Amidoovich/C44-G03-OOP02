@@ -11,9 +11,9 @@ namespace S2
         #region Attributes
         public int EmpId;
 
-        private string EmpName;
+        private string? EmpName;
 
-        public decimal Salary;
+        private decimal Empsalary;
         #endregion
 
         #region Constructors
@@ -45,7 +45,35 @@ namespace S2
 
 
         #endregion
+        #region Properties
 
+        #region Full Property
+
+        public decimal Salary
+        {
+            get { return Empsalary; }
+            set { Empsalary = value > 5000 ? 5000 : value; }
+        }
+
+        
+
+        #endregion
+
+        #region Automatic Property
+
+        public int Age { get; set; }
+
+        public int Hamada { get; set; }
+
+        //private decimal deduction;
+
+        public decimal Deduction // read only property
+        {
+            get { return Salary * 0.1M;  } 
+        }
+
+        #endregion
+        #endregion
 
         #endregion
 
